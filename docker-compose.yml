@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  players:
+    image: ${DOCKER_REGISTRY-}players
+    build:
+      context: .
+      dockerfile: Players/Dockerfile
